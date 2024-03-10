@@ -62,10 +62,11 @@ div#formulario > p{
 
 form > div.campo{
     background-color: rgba(0, 0, 0, 0.384);
+    border: 2px solid #822c3f;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -85,6 +86,26 @@ form > input[type=submit]{
 
 form > input[type=submit]:hover{
     background-color: #6d071d;
+}
+
+div.campo > span{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #822c3f;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > a.botao{
